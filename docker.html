@@ -12,14 +12,22 @@
     </p>
 
     <div class='text'>
+        <h1>Pull Docker Image</h1>
+        <form action="">
+            <h2>Image name to Pull</h2>
+            <input name="image_name" type="text" />
+            <br>
+            <button class="button1" type="submit">Submit</button>
+        </form>
+        <br>
+
+
         <h1>Launch Docker container</h1>
         <form action="">
-            <h2>Which of OS you want to launch?</h2>
+            <h2>Name of container</h2>
             <input name="os_name" type="text" />
-            <h2>Name for your OS</h2>
-            <input name="name" type="text" />
-            <h2>Do you have that OS image in your instance (y/n)</h2>
-            <input name="que" type="text" />
+            <h2>Image Name</h2>
+            <input name="image_name" type="text" />
             <br>
             <button class="button1" type="submit">Submit</button>
         </form>
@@ -27,8 +35,8 @@
 
         <h1>Remove Docker container</h1>
         <form action="">
-            <h2>Name for your OS</h2>
-            <input name="name" type="text" />
+            <h2>Name of container</h2>
+            <input name="os_name" type="text" />
             <br>
             <button class="button1" type="submit">Submit</button>
         </form>
