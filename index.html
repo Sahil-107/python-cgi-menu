@@ -8,29 +8,29 @@
 
   <div class="menu-items" align-items="center">
 
-    <a href='web-server.html'>
-      <h1>Web Server</h1>
-    </a>
+    <form action="web-server.html">
+      <button class="button1">Web Server</button>
+    </form>
 
     <br>
-    <a href='hadoop.html'>
-      <h1>Hadoop</h1>
-    </a>
+    <form action="hadoop.html">
+      <button class="button1">Hadoop</button>
+    </form>
 
     <br>
-    <a href='ec2.html'>
-      <h1>Cloud Services</h1>
-    </a>
+    <form action="ec2.html">
+      <button class="button1">Cloud Services</button>
+    </form>
 
     <br>
-    <a href='lvm.html'>
-      <h1>Partitions</h1>
-    </a>
+    <form action="lvm.html">
+      <button class="button1">Partitions</button>
+    </form>
 
     <br>
-    <a href='docker.html'>
-      <h1>Docker</h1>
-    </a>
+    <form action="docker.html">
+      <button class="button1">Docker</button>
+    </form>
 
   </div>
 </body>
@@ -39,5 +39,28 @@
   .menu-items {
     text-align: center;
     font-family: 'Nunito';
+  }
+
+  .button1 {
+    padding: 10px 20px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4470e9;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+  }
+
+  .button1:hover {
+    background-color: #89b1fa
+  }
+
+  .button1:active {
+    background-color: #4470e9;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
   }
 </style>
