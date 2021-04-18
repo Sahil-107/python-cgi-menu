@@ -1,0 +1,92 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+<body bgcolor=#c8faf4>
+    <B>
+        <p class='text' align="center" style="font-size: 100px; margin-top: 10px">Docker</p>
+    </B>
+
+    <p style="text-align: center">
+        <img src="https://i.pinimg.com/originals/f5/5e/80/f55e8059ea945abfd6804b887dd4a0af.gif" width="400px"
+            height="400px" />
+    </p>
+
+    <div class='text'>
+        <h1>Launch Docker container</h1>
+        <form action="">
+            <h2>Which of OS you want to launch?</h2>
+            <input name="os_name" type="text" />
+            <h2>Name for your OS</h2>
+            <input name="name" type="text" />
+            <h2>Do you have that OS image in your instance (y/n)</h2>
+            <input name="que" type="text" />
+            <br>
+            <button class="button1" type="submit">Submit</button>
+        </form>
+        <br>
+
+        <h1>Remove Docker container</h1>
+        <form action="">
+            <h2>Name for your OS</h2>
+            <input name="name" type="text" />
+            <br>
+            <button class="button1" type="submit">Submit</button>
+        </form>
+        <br>
+
+        <form action="index.html">
+            <h2>Go back to main page</h2><br>
+            <button class="button1" type="submit">Go Back</button>
+        </form>
+    </div>
+</body>
+
+<style>
+    .button1 {
+        padding: 10px 20px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px #999;
+    }
+
+    .button1:hover {
+        background-color: #3e8e41
+    }
+
+    .button1:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    .text,
+    .main_menu {
+        font-family: 'Nunito';
+    }
+
+    input[type=text] {
+        width: 40%;
+        background-color: rgb(205, 202, 207);
+        color: black;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=text]:hover {
+        background-color: rgb(205, 202, 207);
+    }
+
+    div {
+        border-radius: 5px;
+        padding: 20px;
+    }
+</style>
