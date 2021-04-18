@@ -1,0 +1,146 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+<body bgcolor=fffff>
+
+    <B>
+        <p class='text' style="font-size: 100px; margin-top: 10px" align="center">Hadoop</p>
+    </B>
+
+    <p style="text-align: center">
+        <img src="https://miro.medium.com/max/2760/1*kPKoXmHBDmGthbah-0549A.png" height="300 px" width="600 px" />
+    </p>
+    <br>
+
+    <div class="main_menu" style="list-style-type: square">
+
+        <h1>Start Namenode</h1>
+        <form action="http://192.168.43.167/cgi-bin/startnamenode.py">
+            <button class="button1" type="submit">Start</button>
+        </form>
+        <br>
+
+
+        <h1>Start Datanode</h1>
+        <form action="http://192.168.43.159/cgi-bin/datanodestart.py">
+            <button class="button1" type="submit">Start</button>
+        </form>
+        <br>
+
+
+        <h1>Stop Namenode</h1>
+        <form action="http://192.168.43.167/cgi-bin/stopnamenode.py">
+            <button class="button1" type="submit">Stop</button>
+        </form>
+        <br>
+
+        <h1>Stop Datanode</h1>
+        <form action="http://192.168.43.159/cgi-bin/datanodestop.py">
+            <button class="button1" type="submit">Stop</button>
+        </form>
+        <br>
+
+
+        <h1>Configure Hadoop namenode</h1>
+
+        <h3><I>*note after this you need to format namenode(hadoop namenode -format) and start namenode
+                service(hadoop-daemon.sh start namenode)</I></h3>
+        <br>
+        <form action="http://192.168.43.55/cgi-bin/hadoopconf.py">
+            <h2>Enter instance ip</h2>
+            <input name="ip" type="text" />
+
+            <h2>Enter user name</h2>
+            <input name="user" type="text" />
+
+            <h2>Enter user password</h2>
+            <input name="passwd" type="text" />
+
+            <h2>Enter port number</h2>
+            <input name="port" type="text" />
+            <br>
+            <button class="button1" type="submit">Run</button>
+        </form>
+
+        <h1>Configure Hadoop datanode</h1>
+
+        <h3><I>*note after this you need to start datanode service(hadoop-daemon.sh start datanode)</I></h3>
+        <br>
+        <form action="http://192.168.43.55/cgi-bin/hadoopdatanode.py">
+            <h2>Enter instance ip</h2>
+            <input name="ip" type="text" />
+
+            <h2>Enter user name</h2>
+            <input name="user" type="text" />
+
+            <h2>Enter user password</h2>
+            <input name="passwd" type="text" />
+
+            <h2>Enter namenode ip</h2>
+            <input name="namenodeip" type="text" />
+
+            <h2>Enter port number</h2>
+            <input name="port" type="text" />
+            <br>
+            <button class="button1" type="submit">Stop</button>
+        </form>
+        <br>
+        <form action="http://192.168.43.55/index.html">
+            <h2>Go back to main page</h2><br>
+            <button class="button1" type="submit">Go Back</button>
+        </form>
+    </div>
+</body>
+
+
+
+<style>
+    .button1 {
+        padding: 10px 20px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px #999;
+    }
+
+    .button1:hover {
+        background-color: #3e8e41
+    }
+
+    .button1:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    .text,
+    .main_menu {
+        font-family: 'Nunito';
+    }
+
+    input[type=text] {
+        width: 40%;
+        background-color: rgb(205, 202, 207);
+        color: black;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=text]:hover {
+        background-color: rgb(205, 202, 207);
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #ffffff;
+        padding: 20px;
+    }
+</style>
