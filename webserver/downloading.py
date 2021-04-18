@@ -8,8 +8,8 @@ import cgi
 download = subprocess.run("sudo yum install httpd -y",shell=True)
     
 
-if launch_out.returncode !=0:
+if download.returncode !=0:
         print("\nSome error happened.. :(")
-if launch_out.returncode == 0 :
+if download.returncode == 0 :
         print("\nWebserver Downloaded.. :)")
 
