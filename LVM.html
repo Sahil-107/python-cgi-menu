@@ -1,0 +1,96 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+<body bgcolor=fffff>
+    <B>
+        <p class='text' style="font-size: 70px; margin-top: 10px" align="center">Partitions</p>
+    </B>
+    <p style="text-align: center">
+        <img src="https://raw.githubusercontent.com/Sahil-107/python-cgi-menu/master/banner-1.png" />
+    </p>
+    <br>
+    <div class='text'>
+
+    <h1 class='text'>Create an LVM</h1>
+    <form action="">
+        <h2>Give name of hard disk</h2>
+        <input name="hd" type="text" />
+        <h2>Give name of pv</h2>
+        <input name="pv" type="text" />
+       <h2>Give name of vg</h2>
+       <input name="vg" type="text" />
+       <h2>Give name of lv</h2>
+       <input name="lv" type="text" />
+       <h2>Give size of lv</h2>
+       <input name="size" type="text" /><br>
+       <button class="button1" type="submit">Run</button>
+    </form>
+
+    <h1 class='text'>Increase or decrease size of lvm</h1>
+    <form action="">
+        <h2>Enter 1 for increasing the size</h2>
+<h2>Enter 2 for reducing the size</h2>
+<input name="uc" type="text" />
+<h2>Give name of vg</h2>
+<input name="vg" type="text" />
+<h2>Give name of lv</h2>
+<input name="lv" type="text" />
+<h2>Give size of lv</h2>
+<input name="size" type="text" /><br>
+        <button class="button1" type="submit">Run</button>
+    </form>
+
+
+    <h2 class="text">Go back to main page</h2>
+    <form action="">
+        <button class="button1" type="submit">Go Back</button>
+    </form>
+    </div>
+</body>
+
+<style>
+    img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .button1 {
+        padding: 10px 20px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px #999;
+    }
+
+    .button1:hover {
+        background-color: #3e8e41    
+    }
+    .button1:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    .text {
+        font-family:'Nunito';
+    }
+    input[type=text] {
+        width: 40%;
+        background-color: rgb(205, 202, 207);
+        color: black;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=text]:hover {
+        background-color: rgb(205, 202, 207);
+    }
+</style>
