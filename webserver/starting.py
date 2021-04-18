@@ -8,7 +8,7 @@ import cgi
 start = subprocess.run("sudo systemctl start httpd",shell=True)
     
 
-if launch_out.returncode !=0:
+if start.returncode !=0:
         print("\nSome error happened.. :(")
-if launch_out.returncode == 0 :
+if start.returncode == 0 :
         print("\nWebserver Started.. :)")
