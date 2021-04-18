@@ -1,0 +1,109 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+<body bgcolor=fffff>
+    <B>
+        <p class='text' style="font-size: 70px; margin-top: 10px" align="center">Amazon WebServices</p>
+    </B>
+    <p style="text-align: center">
+        <img src="https://www.setsolutions.com/wp-content/uploads/image034.gif" alt="Amazon WebServices"  width="700 px" height="250 px" />
+    </p>
+    <br>
+
+    <h1 class='text'>Creating Security Key</h1>
+    <form action="">
+        <label for="kname">Enter KeyPair name :</label><br><br>
+        <input type="text" id="kname " name="kname" value=""><br><br>
+        <label for="qname">Enter name by which you want to query :</label><br><br>
+        <input type="text" id="qname" name="qname" value=""><br><br>
+        <label for="savename">Enter the pem file name you want to save the key:</label><br><br>
+        <input type="text" id="savename" name="savename" value=""><br><br>
+        <button class="button1" type="submit">Create</button>
+    </form>
+
+    <h1 class='text'> Creating Security Group</h1>
+    <form action="">
+        <label for="des">Description for security group :</label><br><br>
+        <input type="text" id="des " name="des" value=""><br><br>
+        <label for="gname">Enter security group name :</label><br><br>
+        <input type="text" id="gname" name="gname" value=""><br><br>
+        <button class="button1" type="submit">Create</button>
+    </form>
+
+    <h1 class='text'> Creating EBS</h1>
+    <form action="">
+        <label for="v_type">Enter volume type :</label><br><br>
+        <input type="text" id="v_type " name="v_type" value=""><br><br>
+        <label for="size">Enter size :</label><br><br>
+        <input type="text" id="size" name="size" value=""><br><br>
+        <label for="zone">Enter Zone:</label><br><br>
+        <input type="zone" id="zone" name="zone" value=""><br><br>
+        <button class="button1" type="submit">Create</button>
+    </form>
+
+    <h1 class='text'>  Attach EBS</h1>
+    <form action="">
+        <label for="v_id">Enter EBS Volume ID :</label><br><br>
+        <input type="text" id="v_id " name="v_id" value=""><br><br>
+        <label for="instance_id">Enter Instance ID :</label><br><br>
+        <input type="text" id="instance_id" name="instance_id" value=""><br><br>
+        <button class="button1" type="submit">Attach</button>
+    </form>
+    
+    <h1 class='text'> Launching Ec2 Instance</h1>
+    <form action="">
+
+        <label for="Image_ID">Image ID</label><br><br>
+        <input type="text" id="Image_ID" name="Image_ID" value=""><br><br>
+        
+        <label for="count">How many OS you want to provision :</label><br><br>
+        <input type="text" id="count" name="count" value=""><br><br>
+
+        <label for="instance_type">Instance type:</label><br><br>
+        <input type="text" id="instance_type" name="instance_type" value=""><br><br>
+
+        <label for="security_id">Enter Security Group ID :</label><br><br>
+        <input type="text" id="security_id " name="security_id" value=""><br><br>
+
+        <label for="keyname">Enter Key Name :</label><br><br>
+        <input type="text" id="keyname" name="keyname" value=""><br><br>
+
+        
+        <button class="button1" type="submit">Click To Launch</button>
+    </form>
+       
+</body>
+
+<style>
+    
+    .button1 {
+        padding: 10px 20px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px #999;
+    }
+
+    .button1:hover {
+        background-color: #3e8e41
+    }
+
+    .button1:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    .text {
+        font-size: 40px;
+        font-family:'Nunito';
+    }
+</style>
+
+   
+
